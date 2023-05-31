@@ -20,8 +20,6 @@ return new class extends Migration
             $table->foreign('familiar_id')->references('id')->on('familiars')->onDelete('cascade');
             $table->unsignedBigInteger('nicho_id')->nullable();
             $table->foreign('nicho_id')->references('id')->on('nichos')->onDelete('cascade');
-            $table->unsignedBigInteger('sector_id');
-            $table->foreign('sector_id')->references('id')->on('sectors')->onDelete('cascade');
             $table->unsignedBigInteger('tiposer_id');
             $table->foreign('tiposer_id')->references('id')->on('tipo_servicios')->onDelete('cascade');
             $table->decimal('precio', 5, 2)->default(0.00);

@@ -30,7 +30,7 @@ class Servicio extends Model
     }
     
     public function sector(){
-        return $this->belongsTo(Sector::class, 'sector_id');
+        return $this->belongsTo(TipoServicio::class, 'tiposer_id');
     }
     
 }

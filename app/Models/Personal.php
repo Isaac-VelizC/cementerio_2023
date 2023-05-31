@@ -13,8 +13,4 @@ class Personal extends Model
     protected $primaryKey = "id";
     protected $fillable = ['nombre', 'apellido', 'CI', 'telefono', 'direccion', 'email', 'salario', 'estado', 'user_id'];
 
-    public function sectors(){
-        return $this->belongsTo(Sector::class, 'sector_id');
-    }
-
 }
